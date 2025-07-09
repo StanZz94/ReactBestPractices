@@ -7,14 +7,14 @@ function App() {
       <h2>Why work with us?</h2>
 
       <Accordion className="accordion">
-        <AccordionItem title="We got 20 years expirience!">
+        <AccordionItem className="accordion-item" id="1" title="We got 20 years expirience!">
           <article>
             <p>Cant go wrong with us!</p>
             <p>Bla bla bla blablalbal balbalbal ballblbalba</p>
           </article>
         </AccordionItem>
 
-        <AccordionItem title="We got 20 years expirience!">
+        <AccordionItem className="accordion-item" id="2" title="We got 20 years expirience!">
           <article>
             <p>Cant go wrong with us!</p>
             <p>Bla bla bla blablalbal balbalbal ballblbalba</p>
