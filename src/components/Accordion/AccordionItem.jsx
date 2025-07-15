@@ -1,4 +1,5 @@
 import { useAccordionContext } from "./Accordion"
+import AccordionTitle from "./AccordionTitle";
 
 export default function AccordionItem({ id, children, className, title }) {
 
@@ -10,7 +11,7 @@ export default function AccordionItem({ id, children, className, title }) {
     }
     return (
         <li className={className}>
-            <h3 onClick={handleClick}>{title}</h3>
+            <AccordionTitle>{title}</AccordionTitle>
 
             <div className={isOpen ? 'accordion-item-content open' : 'accordion-item-content'}>
                 {children}
