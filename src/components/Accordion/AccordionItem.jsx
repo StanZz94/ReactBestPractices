@@ -1,13 +1,11 @@
 import AccordionContent from "./AccordionContent";
 import AccordionTitle from "./AccordionTitle";
 
-export default function AccordionItem({ id, children, className, title }) {
+export default function AccordionItem({ children, className }) {
 
     return (
         <li className={className}>
-            <AccordionTitle id={id}>{title}</AccordionTitle>
-
-            <AccordionContent id={id}>{children}</AccordionContent>
+            {children}
         </li>
     )
 }
